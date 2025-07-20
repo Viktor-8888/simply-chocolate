@@ -1,3 +1,63 @@
-.visually-hidden {
-  display: none;
+/* #region Base */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fafafa;
+  color: #111;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+}
+address {
+  font-style: normal;
+}
+button {
+  cursor: pointer;
+}
+
+/* #endregion */
+/* #region Common */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.section-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-title-accent {
+  color: #fd9222;
+}
+/* #endregion */
