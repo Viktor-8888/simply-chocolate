@@ -43,13 +43,13 @@ button {
   white-space: nowrap;
   clip-path: inset(100%);
 }
-.container {
+.mobile-container {
   min-width: 320px;
   max-width: 375px;
   padding: 0 20px;
   margin: 0 auto;
 }
-.section-title {
+.mobile-container {
   font-weight: 600;
   font-size: 20px;
   line-height: 120%;
@@ -57,7 +57,7 @@ button {
   text-transform: uppercase;
   text-align: center;
 }
-.section-title-accent {
+.mobile-section-title-accent {
   color: #fd9222;
 }
 /* #endregion */
