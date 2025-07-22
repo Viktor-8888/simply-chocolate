@@ -335,15 +335,16 @@
       <!-- #endregion -->
 
       <!-- #region Top Sellers -->
-      <section>
+      <section class="mobile-bestsellers">
         <div class="mobile-container">
-          <h2 class="section-title">
-            <span class="section-title-accent">Top</span>
+          <h2 class="mobile-section-title">
+            <span class="mobile-section-title-accent">Top</span>
             Sellers
           </h2>
-          <ul>
-            <li>
+          <ul class="mobile-bestsellers-list">
+            <li class="mobile-bestsellers-items">
               <img
+                class="mobile-bestsellers-img"
                 src="./images/top-sellers/chocolate-with-nuts.jpg"
                 alt="Chocolate with nuts"
                 width="335"
@@ -354,10 +355,11 @@
                 pleasures. When delicate and silky chocolate meets crunchy and
                 tasty nuts, a real culinary pleasure arises.
               </p>
-              <h3>CHOCOLATE WITH NUTS</h3>
+              <h3 class="mobile-bestsellers-subtitle">CHOCOLATE WITH NUTS</h3>
             </li>
-            <li>
+            <li class="mobile-bestsellers-items">
               <img
+                class="mobile-bestsellers-img"
                 src="./images/top-sellers/chocolate-with-fruits.jpg"
                 alt="Chocolate with fruits"
                 width="335"
@@ -369,17 +371,18 @@
                 aromatic chocolate with fresh and juicy fruits, creating a true
                 poetry of taste.
               </p>
-              <h3>CHOCOLATE WITH FRUITS</h3>
+              <h3 class="mobile-bestsellers-subtitle">CHOCOLATE WITH FRUITS</h3>
             </li>
-            <li>
+            <li class="mobile-bestsellers-items">
               <img
+                class="mobile-bestsellers-img"
                 src="./images/top-sellers/dark-chocolate.jpg"
                 alt="Dark chocolate"
                 width="335"
                 height="464"
               />
               <p class="overlay"></p>
-              <h3>DARK CHOCOLATE</h3>
+              <h3 class="mobile-bestsellers-subtitle">DARK CHOCOLATE</h3>
             </li>
           </ul>
         </div>
@@ -387,56 +390,61 @@
       <!-- #endregion -->
 
       <!-- #region Reviews -->
-      <section id="reviews">
+      <section class="mobile-reviews" id="reviews">
         <div class="mobile-container">
-          <h2 class="section-title">
-            <span class="section-title-accent">Chocolate</span>
+          <h2 class="mobile-section-title">
+            <span class="mobile-section-title-accent">Chocolate</span>
             is loved
           </h2>
-          <ul>
-            <li>
+          <ul class="mobile-reviews-list">
+            <li class="mobile-reviews-items">
               <img
+                class="mobile-reviews-img"
                 src="./images/reviews/victoria-dobrzhanska.jpg"
                 alt="Victoria Dobrzhanska"
                 width="80"
                 height="80"
               />
-              <h3>Victoria Dobrzhanska</h3>
-              <p>
+              <h3 class="mobile-reviews-subtitle">Victoria Dobrzhanska</h3>
+              <p class="mobile-reviews-text">
                 I love this chocolate bar. Perfect combination of light crispy
                 wafer, covered in a thin layer chocolate.
               </p>
             </li>
-            <li>
+            <li class="mobile-reviews-items">
               <img
+                class="mobile-reviews-img"
                 src="./images/reviews/nazar-babenko.jpg"
                 alt="Nazar Babenko"
                 width="80"
                 height="80"
               />
-              <h3>Nazar Babenko</h3>
-              <p>
+              <h3 class="mobile-reviews-subtitle">Nazar Babenko</h3>
+              <p class="mobile-reviews-text">
                 This chocolate confection is a delight! A delight! The wafer is
                 light and crisp, the hazelnut cream is smooth, and the chocolate
                 is good.
               </p>
             </li>
-            <li>
+            <li class="mobile-reviews-items">
               <img
+                class="mobile-reviews-img"
                 src="./images/reviews/olena-kampusch.jpg"
                 alt="Olena Kampusch"
                 width="80"
                 height="80"
               />
-              <h3>Olena Kampusch</h3>
-              <p>
+              <h3 class="mobile-reviews-subtitle">Olena Kampusch</h3>
+              <p class="mobile-reviews-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
                 chocolate and the creaminess inside. The wafer is soft but
                 crunchy.
               </p>
             </li>
           </ul>
-          <button type="button">Leave a review</button>
+          <button class="mobile-reviews-btn" type="button">
+            Leave a review
+          </button>
         </div>
       </section>
 
@@ -444,111 +452,161 @@
     </main>
 
     <!-- #region Footer -->
-    <footer>
+    <footer class="mobile-footer">
       <div class="mobile-container">
-        <p>
-          <span class="section-title-accent">Chocolate</span>
+        <p class="mobile-footer-text">
+          <span class="mobile-section-title-accent">Chocolate</span>
           a delicious cure for a bad day
         </p>
-        <adress>
-          <p>Contact us</p>
-          <ul>
-            <li><a href="tel:+380684439426">+380 (68) 443-94-26</a></li>
-            <li>
-              <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+        <adress class="mobile-footer-adress">
+          <p class="mobile-footer-adress-text">Contact us</p>
+          <ul class="mobile-footer-adress-list">
+            <li class="mobile-footer-adress-items">
+              <a class="mobile-footer-adress-tel" href="tel:+380684439426">
+                +380 (68) 443-94-26
+              </a>
+            </li>
+            <li class="mobile-footer-adress-items">
+              <a
+                class="mobile-footer-adress-email"
+                href="mailto:simplychoc@gmail.com"
+              >
+                simplychoc@gmail.com
+              </a>
             </li>
           </ul>
-          <p>Social networks</p>
-          <ul>
-            <li>
+          <p class="mobile-footer-socials-text">Social networks</p>
+          <ul class="mobile-footer-socials-list">
+            <li class="mobile-footer-socials-items">
               <a
+                class="mobile-footer-socials-link"
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Link to Facebook"
               >
-                <svg class="" width="24" height="24">
+                <svg class="mobile-socials-icons-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="mobile-footer-socials-items">
               <a
+                class="mobile-footer-socials-link"
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Link to Instagram"
               >
-                <svg class="" width="24" height="24">
+                <svg class="mobile-socials-icons-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="mobile-footer-socials-items">
               <a
+                class="mobile-footer-socials-link"
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Link to Twitter"
               >
-                <svg class="" width="24" height="24">
+                <svg class="mobile-socials-icons-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </adress>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#made">How it’s made?</a></li>
-          <li><a href="#reviews">Chocolate is loved</a></li>
+        <ul class="mobile-footer-menu-list">
+          <li class="mobile-footer-menu-items">
+            <a class="mobile-footer-menu-link" href="#home">Home</a>
+          </li>
+          <li class="mobile-footer-menu-items">
+            <a class="mobile-footer-menu-link" href="#made">How it’s made?</a>
+          </li>
+          <li class="mobile-footer-menu-items">
+            <a class="mobile-footer-menu-link" href="#reviews">
+              Chocolate is loved
+            </a>
+          </li>
         </ul>
-        <form name="subscribe">
-          <input name="email" type="text" placeholder="Enter your email" />
-          <button type="submit">Subscribe</button>
+        <form class="mobile-footer-form" name="subscribe">
+          <input
+            class="mobile-footer-form-input"
+            name="email"
+            type="text"
+            placeholder="Enter your email"
+          />
+          <button class="mobile-footer-form-btn" type="submit">
+            Subscribe
+          </button>
         </form>
       </div>
     </footer>
     <!-- #endregion -->
 
     <!-- #region Modal -->
-    <div class="backdrop">
-      <div class="modal">
-        <button type="button">
-          <svg class="" width="24" height="24">
+    <div class="mobile-backdrop">
+      <div class="mobile-modal">
+        <button class="mobile-modal-btn" type="button">
+          <svg class="mobile-modal-svg" width="24" height="24">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="section-title">
+        <h2 class="mobile-section-title">
           leave a review about
-          <span class="section-title-accent">our chocolate</span>
+          <span class="mobile-section-title-accent">our chocolate</span>
         </h2>
-        <form>
-          <label for="user-name">Name</label>
-          <input type="text" name="user-name" id="user-name" />
-          <svg class="" width="18" height="18">
+        <form class="mobile-modal-form">
+          <label class="mobile-modal-form-label" for="user-name">Name</label>
+          <input
+            class="mobile-modal-form-input"
+            type="text"
+            name="user-name"
+            id="user-name"
+          />
+          <svg class="mobile-modal-form-svg" width="18" height="18">
             <use href="./images/icons.svg#icon-user-mob"></use>
           </svg>
-          <label for="">Email</label>
-          <input type="email" name="user-email-modal" id="user-email-modal" />
-          <svg class="" width="18" height="18">
+          <label class="mobile-modal-form-label" for="">Email</label>
+          <input
+            class="mobile-modal-form-input"
+            type="email"
+            name="user-email-modal"
+            id="user-email-modal"
+          />
+          <svg class="mobile-modal-form-svg" width="18" height="18">
             <use href="./images/icons.svg#icon-mail"></use>
           </svg>
-          <label for="">Phone number</label>
-          <input type="tel" name="user-tel-modal" id="user-tel-modal" />
-          <svg class="" width="18" height="18">
+          <label class="mobile-modal-form-label" for="">Phone number</label>
+          <input
+            class="mobile-modal-form-input"
+            type="tel"
+            name="user-tel-modal"
+            id="user-tel-modal"
+          />
+          <svg class="mobile-modal-form-svg" width="18" height="18">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
-          <label for="">Comment</label>
+          <label class="mobile-modal-form-label" for="">Comment</label>
           <textarea
+            class="mobile-modal-form-textarea"
             name="user-comment"
             id="user-comment"
             placeholder="Enter text"
           ></textarea>
-          <input type="checkbox" name="user-privacy" id="user-privacy" />
-          <label for="user-privacy" class="checkbox-modal-label"></label>
-          <p>I accept the terms and conditions of the Privacy Policy</p>
-          <button type="submit">Send</button>
+          <input
+            class="mobile-modal-form-checkbox"
+            type="checkbox"
+            name="user-privacy"
+            id="user-privacy"
+          />
+          <label for="user-privacy" class="mobile-modal-checkbox-label"></label>
+          <p class="mobile-modal-privacy-text">
+            I accept the terms and conditions of the Privacy Policy
+          </p>
+          <button class="mobile-modal-form-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
@@ -556,49 +614,58 @@
 
     <!-- #region Mobile menu -->
     <div class="mobile-menu">
-      <button type="button">
-        <svg class="" width="28" height="28">
+      <button class="mobile-menu-close-btn" type="button">
+        <svg class="mobile-menu-close-svg" width="28" height="28">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#made">How it’s made?</a></li>
-        <li><a href="#reviews">Chocolate is loved</a></li>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-items">
+          <a class="mobile-menu-link" href="#home">Home</a>
+        </li>
+        <li class="mobile-menu-items">
+          <a class="mobile-menu-link" href="#made">How it’s made?</a>
+        </li>
+        <li class="mobile-menu-items">
+          <a class="mobile-menu-link" href="#reviews">Chocolate is loved</a>
+        </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="mobile-menu-socials-list">
+        <li class="mobile-menu-socials-items">
           <a
+            class="mobile-menu-socials-link"
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to Facebook"
           >
-            <svg class="" width="24" height="24">
+            <svg class="mobile-menu-socials-svg" width="24" height="24">
               <use href="./images/icons.svg#icon-icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="mobile-menu-socials-items">
           <a
+            class="mobile-menu-socials-link"
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to Instagram"
           >
-            <svg class="" width="24" height="24">
+            <svg class="mobile-menu-socials-svg" width="24" height="24">
               <use href="./images/icons.svg#icon-icon-instagram"></use>
             </svg>
           </a>
         </li>
-        <li>
+        <li class="mobile-menu-socials-items">
           <a
+            class="mobile-menu-socials-link"
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to Twitter"
           >
-            <svg class="" width="24" height="24">
+            <svg class="mobile-menu-socials-svg" width="24" height="24">
               <use href="./images/icons.svg#icon-twitter-1"></use>
             </svg>
           </a>
