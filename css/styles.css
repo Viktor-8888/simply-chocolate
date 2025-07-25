@@ -115,7 +115,7 @@ button {
 
 /* #region Start page */
 .mobile-startpage {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .mobile-startpage-holder {
@@ -199,7 +199,8 @@ button {
 
 /* #region Benefits */
 .mobile-benefits {
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .benefits-container {
   background-color: #1e1823;
@@ -241,8 +242,11 @@ button {
   line-height: 1.21;
 }
 /* #endregion */
+
+/* #region Ingridients */
 .mobile-ingridients {
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .ingridients-title {
   width: 283px;
@@ -274,7 +278,6 @@ button {
 .mobile-ingridients-items:nth-child(2) {
   background-color: #fff;
   color: #111;
-  stroke: #fd9222;
 }
 .mobile-ingridients-items:nth-child(3) {
   background-color: #1e1823;
@@ -314,17 +317,70 @@ button {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
+/* #endregion */
+
 .mobile-made {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.mobile-section-title {
+  margin: 0 auto 32px auto;
+}
+.made-wrapper-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.mobile-made-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .mobile-made-play-svg {
+  stroke: #fff;
+  fill: transparent;
 }
 .mobile-made-img {
+  border-radius: 15px;
 }
 .mobile-made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  padding: 20px 14px;
 }
 .mobile-made-list {
+  padding: 0 14px 20px 14px;
 }
 .mobile-made-items {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 18px;
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+.mobile-made-items::before {
+  content: '';
+  display: inline-block;
+  flex-shrink: 0;
+  margin-top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+  border-radius: 50%;
+}
+.mobile-made-list .mobile-made-items:last-child {
+  padding-bottom: 0;
 }
 .mobile-products {
 }
