@@ -422,9 +422,9 @@
       <!-- #endregion -->
 
       <!-- #region Reviews -->
-      <!-- <section class="mobile-reviews" id="reviews">
+      <section class="mobile-reviews" id="reviews">
         <div class="mobile-container">
-          <h2 class="mobile-section-title">
+          <h2 class="mobile-section-title reviews-title">
             <span class="mobile-section-title-accent">Chocolate</span>
             is loved
           </h2>
@@ -443,7 +443,7 @@
                 wafer, covered in a thin layer chocolate.
               </p>
             </li>
-            <li class="mobile-reviews-items">
+            <li class="mobile-reviews-items reviews-item">
               <img
                 class="mobile-reviews-img"
                 src="./images/reviews/nazar-babenko.jpg"
@@ -458,7 +458,7 @@
                 is good.
               </p>
             </li>
-            <li class="mobile-reviews-items">
+            <li class="mobile-reviews-items reviews-item">
               <img
                 class="mobile-reviews-img"
                 src="./images/reviews/olena-kampusch.jpg"
@@ -478,14 +478,14 @@
             Leave a review
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- #endregion -->
     </main>
 
     <!-- #region Footer -->
-    <!-- <footer class="mobile-footer">
-      <div class="mobile-container">
+    <footer class="mobile-footer">
+      <div class="mobile-container footer-container">
         <p class="mobile-footer-text">
           <span class="mobile-section-title-accent">Chocolate</span>
           a delicious cure for a bad day
@@ -507,49 +507,51 @@
               </a>
             </li>
           </ul>
-          <p class="mobile-footer-socials-text">Social networks</p>
-          <ul class="mobile-footer-socials-list">
-            <li class="mobile-footer-socials-items">
-              <a
-                class="mobile-footer-socials-link"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Facebook"
-              >
-                <svg class="mobile-socials-icons-svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-footer-socials-items">
-              <a
-                class="mobile-footer-socials-link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Instagram"
-              >
-                <svg class="mobile-socials-icons-svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="mobile-footer-socials-items">
-              <a
-                class="mobile-footer-socials-link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Twitter"
-              >
-                <svg class="mobile-socials-icons-svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
         </adress>
+        <p class="mobile-footer-socials-text">Social networks</p>
+        <ul class="mobile-footer-socials-list">
+          <li class="mobile-footer-socials-items">
+            <a
+              class="mobile-footer-socials-link"
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Facebook"
+            >
+              <svg class="mobile-socials-icons-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-footer-socials-items">
+            <a
+              class="mobile-footer-socials-link"
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Instagram"
+            >
+              <svg class="mobile-socials-icons-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-footer-socials-items">
+            <a
+              class="mobile-footer-socials-link"
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Link to Twitter"
+            >
+              <svg class="mobile-socials-icons-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <!-- <div class="mobile-footer-wrap"></div> -->
         <ul class="mobile-footer-menu-list">
           <li class="mobile-footer-menu-items">
             <a class="mobile-footer-menu-link" href="#home">Home</a>
@@ -575,73 +577,97 @@
           </button>
         </form>
       </div>
-    </footer> -->
+    </footer>
     <!-- #endregion -->
 
     <!-- #region Modal -->
-    <!-- <div class="mobile-backdrop">
+    <div class="mobile-backdrop">
       <div class="mobile-modal">
         <button class="mobile-modal-btn" type="button">
           <svg class="mobile-modal-svg" width="24" height="24">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="mobile-section-title">
-          leave a review about
-          <span class="mobile-section-title-accent">our chocolate</span>
-        </h2>
-        <form class="mobile-modal-form">
+        <p class="mobile-modal-text">
+          leave a review
+          <br />
+          about
+          <span class="mobile-modal-text-accent">our chocolate</span>
+        </p>
+        <form class="mobile-modal-form" name="review">
           <label class="mobile-modal-form-label" for="user-name">Name</label>
-          <input
-            class="mobile-modal-form-input"
-            type="text"
-            name="user-name"
-            id="user-name"
-          />
-          <svg class="mobile-modal-form-svg" width="18" height="18">
-            <use href="./images/icons.svg#icon-user-mob"></use>
-          </svg>
-          <label class="mobile-modal-form-label" for="">Email</label>
-          <input
-            class="mobile-modal-form-input"
-            type="email"
-            name="user-email-modal"
-            id="user-email-modal"
-          />
-          <svg class="mobile-modal-form-svg" width="18" height="18">
-            <use href="./images/icons.svg#icon-mail"></use>
-          </svg>
-          <label class="mobile-modal-form-label" for="">Phone number</label>
-          <input
-            class="mobile-modal-form-input"
-            type="tel"
-            name="user-tel-modal"
-            id="user-tel-modal"
-          />
-          <svg class="mobile-modal-form-svg" width="18" height="18">
-            <use href="./images/icons.svg#icon-phone"></use>
-          </svg>
-          <label class="mobile-modal-form-label" for="">Comment</label>
+          <div class="mobile-modal-wrap">
+            <input
+              class="mobile-modal-form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+            />
+            <svg class="mobile-modal-form-svg" width="18" height="18">
+              <use href="./images/icons.svg#icon-user-mob"></use>
+            </svg>
+          </div>
+          <label class="mobile-modal-form-label" for="user-email-modal">
+            Email
+          </label>
+          <div class="mobile-modal-wrap">
+            <input
+              class="mobile-modal-form-input"
+              type="email"
+              name="user-email-modal"
+              id="user-email-modal"
+            />
+            <svg class="mobile-modal-form-svg" width="18" height="18">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <label class="mobile-modal-form-label" for="user-tel-modal">
+            Phone number
+          </label>
+          <div class="mobile-modal-wrap">
+            <input
+              class="mobile-modal-form-input"
+              type="tel"
+              name="user-tel-modal"
+              id="user-tel-modal"
+            />
+            <svg class="mobile-modal-form-svg" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label class="mobile-modal-form-label" for="user-comment">
+            Comment
+          </label>
           <textarea
             class="mobile-modal-form-textarea"
             name="user-comment"
             id="user-comment"
             placeholder="Enter text"
+            rows="5"
           ></textarea>
+
           <input
-            class="mobile-modal-form-checkbox"
+            class="mobile-modal-form-checkbox visually-hidden"
             type="checkbox"
             name="user-privacy"
             id="user-privacy"
+            checked
           />
-          <label for="user-privacy" class="mobile-modal-checkbox-label"></label>
-          <p class="mobile-modal-privacy-text">
-            I accept the terms and conditions of the Privacy Policy
-          </p>
+          <label for="user-privacy" class="mobile-modal-checkbox-label">
+            <span class="modale-checkbox-span-first">
+              <svg class="mobile-modale-checkbox-svg" width="10" height="10">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <span class="modale-checkbox-span-second">
+              I accept the terms and conditions of the
+              <a href="" class="mobile-modal-privasy-link">Privacy Policy</a>
+            </span>
+          </label>
           <button class="mobile-modal-form-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- #endregion -->
 
     <!-- #region Mobile menu -->
