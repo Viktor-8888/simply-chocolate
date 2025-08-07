@@ -220,18 +220,19 @@ input {
 .socials-items.header-socials-items {
   border: 1px solid rgba(17, 17, 17, 0.1);
 }
-.socials-items.header-socials-items:hover,
-.socials-items.header-socials-items:focus {
-  border: 1px solid rgba(253, 146, 34, 0.1);
-}
 .socials-icons-svg.header-socials-icons-svg {
   fill: #111;
 }
-.socials-icons-svg.header-socials-icons-svg:hover,
-.socials-icons-svg.header-socials-icons-svg:focus {
+.socials-items.header-socials-items:has(.socials-link:hover) {
+  border: 1px solid rgba(253, 146, 34, 0.1);
+}
+.socials-link:hover .socials-icons-svg.header-socials-icons-svg {
   fill: #fd9222;
 }
-.socials-link:focus.socials-icons-svg.header-socials-icons-svg {
+.socials-items.header-socials-items:has(.socials-link:focus) {
+  border: 1px solid rgba(253, 146, 34, 0.1);
+}
+.socials-link:focus .socials-icons-svg.header-socials-icons-svg {
   fill: #fd9222;
 }
 
