@@ -365,13 +365,36 @@
                   <use href="./images/icons.svg#icon-play"></use>
                 </svg>
               </button>
-              <img
-                class="mobile-made-img"
-                src="./images/made/how-made_mob.jpg"
-                alt="how it's made"
-                width="335"
-                height="500"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1168px)"
+                  srcset="
+                    ./images/made/how-made.jpg    1x,
+                    ./images/made/how-made@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/made/how-made-tab.jpg    1x,
+                    ./images/made/how-made-tab@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/made/how-made-mob.jpg    1x,
+                    ./images/made/how-made-mob@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="mobile-made-img"
+                  src="./images/made/how-made-mob.jpg"
+                  alt="how it's made"
+                  width="335"
+                  height="500"
+                />
+              </picture>
             </div>
             <div class="made-wrapper-text">
               <h3 class="mobile-made-subtitle">
@@ -417,6 +440,10 @@
             <li class="mobile-products-items">
               <img
                 class="mobile-products-img"
+                srcset="
+                  ./images/products/dark-chocolate-orange.jpg    1x,
+                  ./images/products/dark-chocolate-orange@2x.jpg 2x
+                "
                 src="./images/products/dark-chocolate-orange.jpg"
                 alt="Dark-chocolate-orange"
                 width="230"
@@ -429,6 +456,10 @@
             <li class="mobile-products-items">
               <img
                 class="mobile-products-img"
+                srcset="
+                  ./images/products/milk-chocolate-apple&cranberry.jpg    1x,
+                  ./images/products/milk-chocolate-apple&cranberry@2x.jpg 2x
+                "
                 src="./images/products/milk-chocolate-apple&cranberry.jpg"
                 alt="Milk-chocolate-apple&cranberry"
                 width="230"
@@ -441,6 +472,10 @@
             <li class="mobile-products-items">
               <img
                 class="mobile-products-img"
+                srcset="
+                  ./images/products/dark-chocolate-lime&sea-salt.jpg    1x,
+                  ./images/products/dark-chocolate-lime&sea-salt@2x.jpg 2x
+                "
                 src="./images/products/dark-chocolate-lime&sea-salt.jpg"
                 alt="Dark-chocolate-lime&sea-salt"
                 width="230"
@@ -453,6 +488,10 @@
             <li class="mobile-products-items">
               <img
                 class="mobile-products-img"
+                srcset="
+                  ./images/products/dark-chocolate-pineapple.jpg    1x,
+                  ./images/products/dark-chocolate-pineapple@2x.jpg 2x
+                "
                 src="./images/products/dark-chocolate-pineapple.jpg"
                 alt="Dark-chocolate-pineapple"
                 width="230"
@@ -465,6 +504,10 @@
             <li class="mobile-products-items">
               <img
                 class="mobile-products-img"
+                srcset="
+                  ./images/products/milk-chocolate-classic.jpg    1x,
+                  ./images/products/milk-chocolate-classic@2x.jpg 2x
+                "
                 src="./images/products/milk-chocolate-classic.jpg"
                 alt="Milk-chocolate-classic"
                 width="230"
@@ -477,6 +520,10 @@
             <li class="mobile-products-items">
               <img
                 class="mobile-products-img"
+                srcset="
+                  ./images/products/milk-chocolate-honey.jpg    1x,
+                  ./images/products/milk-chocolate-honey@2x.jpg 2x
+                "
                 src="./images/products/milk-chocolate-honey.jpg"
                 alt="Milk-chocolate-honey"
                 width="230"
@@ -489,6 +536,10 @@
             <li class="mobile-products-items">
               <img
                 class="mobile-products-img"
+                srcset="
+                  ./images/products/dark-chocolate-roasted-fruits.jpg    1x,
+                  ./images/products/dark-chocolate-roasted-fruits@2x.jpg 2x
+                "
                 src="./images/products/dark-chocolate-roasted-fruits.jpg"
                 alt="Dark-chocolate-roasted-fruits"
                 width="230"
@@ -501,6 +552,10 @@
             <li class="mobile-products-items">
               <img
                 class="mobile-products-img"
+                srcset="
+                  ./images/products/white-chocolate-classic.jpg    1x,
+                  ./images/products/white-chocolate-classic@2x.jpg 2x
+                "
                 src="./images/products/white-chocolate-classic.jpg"
                 alt="White-chocolate-classic"
                 width="230"
