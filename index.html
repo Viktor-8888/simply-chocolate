@@ -100,7 +100,7 @@
           </li>
         </ul>
 
-        <button class="mobile-header-btn" type="button">
+        <button class="mobile-header-btn js-open-menu" type="button">
           <svg class="mobile-menu-svg">
             <use href="./images/icons.svg#icon-menu-mob"></use>
           </svg>
@@ -714,7 +714,7 @@
               </p>
             </li>
           </ul>
-          <button class="mobile-reviews-btn" type="button">
+          <button class="mobile-reviews-btn js-open-modal" type="button">
             Leave a review
           </button>
         </div>
@@ -749,91 +749,91 @@
               </li>
             </ul>
           </adress>
-          <p class="mobile-footer-socials-text">Social networks</p>
-          <ul class="socials-list">
-            <li class="socials-items">
-              <a
-                class="socials-link"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Facebook"
-              >
-                <svg class="socials-icons-svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-facebook"></use>
-                </svg>
-              </a>
+          <div class="footer-socials-wrap">
+            <p class="mobile-footer-socials-text">Social networks</p>
+            <ul class="socials-list">
+              <li class="socials-items">
+                <a
+                  class="socials-link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Facebook"
+                >
+                  <svg class="socials-icons-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-items">
+                <a
+                  class="socials-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Instagram"
+                >
+                  <svg class="socials-icons-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials-items">
+                <a
+                  class="socials-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Twitter"
+                >
+                  <svg class="socials-icons-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="mobile-footer-wrap">
+          <ul class="mobile-footer-menu-list">
+            <li class="mobile-footer-menu-items">
+              <a class="mobile-footer-menu-link" href="#home">Home</a>
             </li>
-            <li class="socials-items">
-              <a
-                class="socials-link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Instagram"
-              >
-                <svg class="socials-icons-svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-instagram"></use>
-                </svg>
-              </a>
+            <li class="mobile-footer-menu-items">
+              <a class="mobile-footer-menu-link" href="#made">How it's made?</a>
             </li>
-            <li class="socials-items">
-              <a
-                class="socials-link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Twitter"
-              >
-                <svg class="socials-icons-svg" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
+            <li class="mobile-footer-menu-items">
+              <a class="mobile-footer-menu-link" href="#reviews">
+                Chocolate is loved
               </a>
             </li>
           </ul>
+          <form class="mobile-footer-form" name="subscribe">
+            <input
+              class="mobile-footer-form-input"
+              name="email"
+              type="text"
+              placeholder="Enter your email"
+            />
+            <button class="mobile-footer-form-btn" type="submit">
+              Subscribe
+            </button>
+          </form>
         </div>
-
-        <!-- <div class="mobile-footer-wrap"></div> -->
-        <ul class="mobile-footer-menu-list">
-          <li class="mobile-footer-menu-items">
-            <a class="mobile-footer-menu-link" href="#home">Home</a>
-          </li>
-          <li class="mobile-footer-menu-items">
-            <a class="mobile-footer-menu-link" href="#made">How it’s made?</a>
-          </li>
-          <li class="mobile-footer-menu-items">
-            <a class="mobile-footer-menu-link" href="#reviews">
-              Chocolate is loved
-            </a>
-          </li>
-        </ul>
-        <form class="mobile-footer-form" name="subscribe">
-          <input
-            class="mobile-footer-form-input"
-            name="email"
-            type="text"
-            placeholder="Enter your email"
-          />
-          <button class="mobile-footer-form-btn" type="submit">
-            Subscribe
-          </button>
-        </form>
       </div>
     </footer>
     <!-- #endregion -->
 
     <!-- #region Modal -->
-    <div class="mobile-backdrop">
+    <div class="mobile-backdrop js-modal">
       <div class="mobile-modal">
-        <button class="mobile-modal-btn" type="button">
+        <button class="mobile-modal-btn js-close-modal" type="button">
           <svg class="mobile-modal-svg" width="24" height="24">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="mobile-modal-text">
-          leave a review
-          <br />
-          about
+          leave a review about
           <span class="mobile-modal-text-accent">our chocolate</span>
         </p>
         <form class="mobile-modal-form" name="review">
@@ -913,21 +913,25 @@
     <!-- #endregion -->
 
     <!-- #region Mobile menu -->
-    <div class="mobile-menu">
+    <div class="mobile-menu js-menu">
       <button class="mobile-menu-close-btn" type="button">
-        <svg class="mobile-menu-close-svg" width="28" height="28">
+        <svg class="mobile-menu-close-svg js-close-menu" width="28" height="28">
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <ul class="mobile-menu-list">
         <li class="mobile-menu-items">
-          <a class="mobile-menu-link" href="#home">Home</a>
+          <a class="mobile-menu-link js-link-menu-home" href="#home">Home</a>
         </li>
         <li class="mobile-menu-items">
-          <a class="mobile-menu-link" href="#made">How it’s made?</a>
+          <a class="mobile-menu-link js-link-menu-made" href="#made">
+            How it's made?
+          </a>
         </li>
         <li class="mobile-menu-items">
-          <a class="mobile-menu-link" href="#reviews">Chocolate is loved</a>
+          <a class="mobile-menu-link js-link-menu-reviews" href="#reviews">
+            Chocolate is loved
+          </a>
         </li>
       </ul>
       <ul class="mobile-menu-socials-list">
@@ -973,5 +977,6 @@
       </ul>
     </div>
     <!-- #endregion -->
+    <script src="./js/js.js"></script>
   </body>
 </html>
