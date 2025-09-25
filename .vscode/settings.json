@@ -1,0 +1,6 @@
+{
+  "turboConsoleLog.logCorrectionNotificationEnabled": true,
+  "turboConsoleLog.includeLineNum": true,
+  "turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.delimiterInsideMessage": ""
+}

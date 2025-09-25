@@ -205,10 +205,11 @@ input {
     color: #fd9222;
   }
 }
-.header-menu-link:active {
+/* .header-menu-link:active {
   color: #fd9222;
-}
+} */
 .header-menu-link.active {
+  color: #fd9222;
   border-bottom: 2px solid #fd9222;
   /* position: relative; */
 }

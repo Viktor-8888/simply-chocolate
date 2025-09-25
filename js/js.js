@@ -7,6 +7,8 @@ const menuBtnClose = document.querySelector('.js-close-menu');
 const menuLinkHome = document.querySelector('.js-link-menu-home');
 const menuLinkMade = document.querySelector('.js-link-menu-made');
 const menuLinkReviews = document.querySelector('.js-link-menu-reviews');
+// const headerMenuList = document.querySelector('.header-menu-list');
+const headerMenuLinks = document.querySelectorAll('.header-menu-link');
 
 modalBtnOpen.addEventListener('click', toggleModal);
 modalBtnClose.addEventListener('click', toggleModal);
@@ -21,3 +23,9 @@ menuLinkReviews.addEventListener('click', toggleMenu);
 function toggleMenu() {
   menu.classList.toggle('is-open');
 }
+headerMenuLinks.forEach(link => {
+  link.addEventListener('click', function (event) {
+    headerMenuLinks.forEach(l => l.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
